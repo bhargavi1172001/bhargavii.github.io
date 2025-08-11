@@ -801,24 +801,55 @@ html {
 /* The resume button is already styled with .btn and .btn-primary */
 /* If needed, you can adjust the container or layout in the hero section */
 
-#skills h3 {
-    font-size: 1.75rem;
+/* Skills Section - List style with animations */
+#skills {
+    padding: 80px 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
-    color: #2563eb; /* matches your theme color */
-}
-
-/* Optional: Adjust emoji icon size inside skill cards */
-#skills .project-image {
-    font-size: 2.5rem; /* bigger emoji for skill cards */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Optional: Center skill card content text */
-#skills .project-content h3 {
+    color: #2563eb;
     text-align: center;
-    font-size: 1.2rem;
-    margin: 0;
+    margin-bottom: 2.5rem;
+}
+
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 0.3rem;
+}
+
+.skill-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-list li {
+    background: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Animation class to reveal skills */
+.skill-list li.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
