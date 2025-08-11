@@ -133,6 +133,24 @@ function setup_scroll_effects() {
     // Observe elements for animation
     const animate_elements = document.querySelectorAll('.project-card, .stat, .contact-method');
     animate_elements.forEach(el => observer.observe(el));
+
+    // Animate skills list items on scroll
+const skillItems = document.querySelectorAll('#skills .skill-list li');
+
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-in');
+      skillObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+skillItems.forEach(item => skillObserver.observe(item));
+
 }
 
 /**
