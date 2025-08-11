@@ -803,11 +803,17 @@ html {
 
 /* Skills Section - List style with animations */
 /* Skills Section - List style with subtle animations */
+.skill-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;  /* Remove default left padding */
+    margin: 0;
+}
+
 .skill-list li {
     position: relative;
     font-size: 1.1rem;
     color: #4b5563;
-    padding: 6px 0 6px 28px; /* padding-left to make space for tick */
+    padding: 6px 0 6px 28px; /* space for the tick */
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.4s ease, transform 0.4s ease;
@@ -819,7 +825,7 @@ html {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: #10b981; /* Tailwind's green-500 */
+    color: #10b981; /* green tick */
     font-weight: bold;
     font-size: 1.1rem;
 }
