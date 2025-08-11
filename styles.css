@@ -805,17 +805,17 @@ html {
 /* Skills Section - List style with subtle animations */
 .skills-container {
     max-width: 900px;
-    margin: 0 auto; /* center the container */
+    margin: 0 auto; /* center container */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* center the items */
+    justify-content: center; /* center children horizontally */
     gap: 2rem;
     padding: 20px 0;
 }
 
 .skill-category {
-    flex: 1 1 220px; /* flexible basis 220px */
-    text-align: center; /* center text inside each skill category */
+    flex: 1 1 220px; /* flexible basis of 220px */
+    text-align: center; /* center text inside each category */
     list-style: none;
 }
 
@@ -827,12 +827,13 @@ html {
 
 .skill-list {
     padding-left: 0;
+    margin: 0;
 }
 
 .skill-list li {
     font-size: 1.1rem;
     color: #4b5563;
-    padding: 5px 0;
+    padding: 6px 0;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.4s ease, transform 0.4s ease;
@@ -841,6 +842,19 @@ html {
 .skill-list li.animate-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-category {
+        width: 100%;
+        max-width: 320px;
+    }
 }
 
 
