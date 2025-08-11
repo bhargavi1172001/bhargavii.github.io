@@ -800,3 +800,25 @@ html {
 
 /* The resume button is already styled with .btn and .btn-primary */
 /* If needed, you can adjust the container or layout in the hero section */
+
+#skills h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2563eb; /* matches your theme color */
+}
+
+/* Optional: Adjust emoji icon size inside skill cards */
+#skills .project-image {
+    font-size: 2.5rem; /* bigger emoji for skill cards */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Optional: Center skill card content text */
+#skills .project-content h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+}
