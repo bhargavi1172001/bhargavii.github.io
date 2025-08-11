@@ -803,7 +803,6 @@ html {
 
 /* Skills Section - List style with animations */
 /* Skills Section - List style with subtle animations */
-/* Skills list item animation */
 #skills .skill-list li {
     opacity: 0;
     transform: translateY(20px);
@@ -814,6 +813,7 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 
 
