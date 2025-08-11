@@ -803,64 +803,54 @@ html {
 
 /* Skills Section - List style with animations */
 /* Skills Section - List style with subtle animations */
-.skill-list {
-    list-style: none; /* Remove default bullets */
-    padding-left: 0;  /* Remove default left padding */
-    margin: 0;
-}
-
-.skill-list li {
-    position: relative;
-    font-size: 1.1rem;
-    color: #4b5563;
-    padding: 6px 0 6px 28px; /* space for the tick */
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-.skill-list li::before {
-    content: '✔'; /* Unicode checkmark */
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #10b981; /* green tick */
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.skill-list li.animate-in {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .skills-container {
     display: flex;
-    justify-content: center;  /* Center horizontally */
-    flex-wrap: wrap;          /* Wrap to next line if needed */
-    gap: 3rem;                /* Space between skill categories */
+    justify-content: center;  /* center all skill categories horizontally */
+    flex-wrap: wrap;
+    gap: 3rem;
     margin-top: 2rem;
 }
 
 .skill-category {
-    flex: 1 1 200px;          /* Flexible width with min size */
+    flex: 1 1 200px;
     max-width: 250px;
-    text-align: center;       /* Center text inside each category */
+    text-align: center;  /* center category title */
 }
 
 .skill-category h3 {
     margin-bottom: 1rem;
-    color: #2563eb;           /* You can keep your theme color */
+    color: #2563eb;
 }
 
 .skill-list {
     list-style: none;
     padding-left: 0;
-    margin: 0 auto;           /* Center ul inside category */
-    display: inline-block;    /* Shrink wrap to content */
-    text-align: left;         /* Keep text and ticks aligned left */
+    margin: 0 auto;          /* center the list horizontally */
+    display: inline-block;   /* shrink to content width */
+    text-align: left;        /* keep text & tick left aligned inside */
 }
+
+.skill-list li {
+    position: relative;
+    padding-left: 25px;       /* space for tick */
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.skill-list li::before {
+    content: '✔';             /* green tick */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #10b981;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+
+
 
 
 
