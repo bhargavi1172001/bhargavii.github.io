@@ -804,14 +804,18 @@ html {
 /* Skills Section - List style with animations */
 /* Skills Section - List style with subtle animations */
 #skills .skill-list li {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+  .skills-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Center horizontally */
+    gap: 2rem;
 }
 
-#skills .skill-list li.animate-in {
-    opacity: 1;
-    transform: translateY(0);
+.skill-category {
+    flex: 1 1 220px; /* flexible but minimum width */
+    text-align: center; /* center text inside each category */
 }
 
 
