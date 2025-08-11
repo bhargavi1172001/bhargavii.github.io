@@ -803,61 +803,19 @@ html {
 
 /* Skills Section - List style with animations */
 /* Skills Section - List style with subtle animations */
-#skills {
-    padding: 80px 0;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-#skills h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #2563eb;
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
-
-.skill-category {
-    margin-bottom: 2rem;
-}
-
-.skill-category h3 {
-    font-size: 1.5rem;
-    color: #1f2937;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #2563eb;
-    padding-bottom: 0.3rem;
-}
-
-.skill-list {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.skill-list li {
-    font-weight: 600;
-    font-size: 1rem;
-    color: #2563eb;
-    border-bottom: 2px solid transparent;
-    cursor: default;
-    
+/* Skills list item animation */
+#skills .skill-list li {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.skill-list li.animate-in {
+#skills .skill-list li.animate-in {
     opacity: 1;
     transform: translateY(0);
 }
 
-.skill-list li:hover {
-    border-bottom-color: #10b981; /* subtle green underline on hover */
-    color: #10b981;
-}
+
 
 
 
