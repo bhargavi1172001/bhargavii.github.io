@@ -802,6 +802,7 @@ html {
 /* If needed, you can adjust the container or layout in the hero section */
 
 /* Skills Section - List style with animations */
+/* Skills Section - List style with subtle animations */
 #skills {
     padding: 80px 0;
     max-width: 900px;
@@ -830,26 +831,33 @@ html {
 
 .skill-list {
     list-style: none;
+    padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
 .skill-list li {
-    background: #2563eb;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 20px;
     font-weight: 600;
     font-size: 1rem;
-    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+    color: #2563eb;
+    border-bottom: 2px solid transparent;
+    cursor: default;
+    
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease;
 }
 
-/* Animation class to reveal skills */
 .skill-list li.animate-in {
     opacity: 1;
     transform: translateY(0);
 }
+
+.skill-list li:hover {
+    border-bottom-color: #10b981; /* subtle green underline on hover */
+    color: #10b981;
+}
+
+
+
