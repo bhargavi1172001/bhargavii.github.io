@@ -1,22 +1,24 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhargavi B - AI ML Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h1>My Portfolio</h1>
-            </div>
-            <nav>
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Bhargavi B</h1>
+                </div>
                 <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -25,83 +27,161 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Welcome to My Portfolio</h1>
-                <p class="hero-subtitle">Showcasing my skills and projects.</p>
-                <div class="hero-buttons">
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi, I'm Bhargavi B</h1>
+                    <p class="hero-subtitle">AI ML Engineer passionate about creating innovative solutions and building scalable applications</p>
+                    <div class="hero-buttons">
+                        <div class="hero-buttons">
                     <!-- Resume Download Button -->
                     <a href="BhargaviBLatestResume.pdf" download class="btn btn-primary">Download Resume</a>
                 </div>
+                        <a href="#about" class="btn btn-primary">About Me</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-placeholder">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-placeholder">🙂</div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="about section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content container">
-            <div class="about-text">
-                <p>Hello! I am a software developer passionate about building amazing web applications.</p>
-                <ul class="feature-list">
-                    <li><i>✓</i> Problem solving skills</li>
-                    <li><i>✓</i> Web development</li>
-                    <li><i>✓</i> Continuous learning</li>
-                </ul>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am an AI/ML Engineer with expertise in federated learning, differential privacy, GANs, and deep learning for computer vision.
+                    I specialize in building AI systems that balance accuracy, privacy, and scalability.</p>
+                        <p>My technical skills include:</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-brain"></i> Federated Learning & Privacy-Preserving AI</li>
+                            <li><i class="fas fa-microchip"></i> GANs, Diffusion Models, CNNs</li>
+                            <li><i class="fas fa-cloud"></i> Cloud Computing & Deployment</li>
+                            <li><i class="fas fa-database"></i> Data Analysis & Processing</li>
+                        </ul>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Technologies</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience" class="experience section">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline container">
-            <!-- Sample timeline item -->
+       <section id="experience" class="experience">
+    <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+
+            <!-- Project Associate I -->
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
                     <div class="job-header">
-                        <h3>Software Developer</h3>
-                        <h4>ABC Company</h4>
-                        <span class="duration">Jan 2022 - Present</span>
+                        <h3>Project Associate I</h3>
+                        <h4>CSIR – Fourth Paradigm Institute</h4>
+                        <span class="duration">Nov 2023 – Present</span>
                     </div>
                     <div class="job-description">
-                        <p>Developed responsive web apps using modern JavaScript frameworks.</p>
-                    </div>
-                    <ul class="job-achievements">
-                        <li>Improved page load times by 30%</li>
-                        <li>Led migration to React</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid container">
-            <!-- Sample project card -->
-            <div class="project-card">
-                <div class="project-image">📱</div>
-                <div class="project-content">
-                    <h3>Mobile App</h3>
-                    <p>A cross-platform mobile app built with Flutter.</p>
-                    <div class="project-links">
-                        <a href="#" class="project-link">GitHub</a>
-                        <a href="#" class="project-link">Live Demo</a>
+                        <p>Worked on AI/ML projects in federated learning and privacy-preserving GANs for biometric and medical datasets.</p>
+                        <ul class="job-achievements">
+                            <li>Developed Pro-WGAN with differential privacy for synthetic biometric data generation.</li>
+                            <li>Implemented Diffusion Models for face image generation with noise-adding and denoising pipelines.</li>
+                            <li>Analyzed privacy-utility trade-offs by tuning differential privacy parameters.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- New Certifications Section -->
+            <!-- Product Support Engineer -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <h3>Product Support Engineer</h3>
+                        <h4>Comviva Technologies</h4>
+                        <span class="duration">Oct 2021 – Sep 2022</span>
+                    </div>
+                    <div class="job-description">
+                        <p>Provided backend technical support for MoMo MTN App, ensuring smooth money transfer, bill payment, and mobile top-up services.</p>
+                        <ul class="job-achievements">
+                            <li>Monitored real-time system performance using Grafana tools.</li>
+                            <li>Analyzed and resolved transaction failures in a Linux environment.</li>
+                            <li>Worked with SQL databases to generate monthly dashboards and reports.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+       <section id="education" class="education">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Bachelor of Engineering</h3>
+                    <h4>Electronics and Communication Engineering</h4>
+                    <p class="institution">Global Academy of Technology (VTU), Bengaluru</p>
+                    <p class="duration">2018 – 2022 | CGPA: 7.57</p>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Pre-University Course (PUC)</h3>
+                    <h4>Science (PCMB)</h4>
+                    <p class="institution">NMKRV Pre University College for Women, Bengaluru</p>
+                    <p class="duration">2016 – 2018 | 77.66%</p>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="education-content">
+                    <h3>High School</h3>
+                    <h4>Secondary Education</h4>
+                    <p class="institution">Good Shepherd Education Society, Bengaluru</p>
+                    <p class="duration">2016 | 72.64%</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!-- New Certifications Section -->
     <section id="certifications" class="section">
         <h2 class="section-title">Certifications</h2>
         <div class="container">
@@ -113,49 +193,103 @@
         </div>
     </section>
 
-    <section id="contact" class="contact section">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-content container">
-            <div class="contact-info">
-                <h3>Get in Touch</h3>
-                <p>You can reach me via email or social media.</p>
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <i class="fas fa-envelope"></i>
-                        <span>email@example.com</span>
-                    </div>
-                    <div class="contact-method">
-                        <i class="fas fa-phone"></i>
-                        <span>+123 456 7890</span>
-                    </div>
+        
+        <section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+
+            <!-- AI Healthcare Agent -->
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="project-content">
+                    <h3>AI Healthcare Diagnosis Agent</h3>
+                    <p>An AI-powered healthcare assistant capable of symptom correction, disease classification, patient history logging, and voice input. Deployed on Hugging Face Spaces with Firebase logging for real-time feedback and model improvement.</p>
                 </div>
             </div>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required />
+
+            <!-- Arduino Obstacle Avoidance & Voice Controlled Robot -->
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-robot"></i>
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required />
+                <div class="project-content">
+                    <h3>Arduino Obstacle Avoidance & Voice Controlled Robot</h3>
+                    <p>Built a voice-controlled obstacle-avoiding robot using Arduino. Integrated ultrasonic sensors for real-time obstacle detection and speech recognition for movement commands.</p>
                 </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+
+            <!-- Multipurpose Robot Car -->
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-car"></i>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+                <div class="project-content">
+                    <h3>Multipurpose Robot Car using Arduino</h3>
+                    <p>Designed and developed a multipurpose Arduino-based robot car capable of performing multiple tasks including obstacle avoidance, remote control, and sensor-based automation.</p>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm actively seeking AI ML Engineer opportunities and would love to discuss how I can contribute to your team. Feel free to reach out for collaborations, job opportunities, or just to say hello!</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:bhargavibharath1114@gmail.com">bhargavibharath1114@gmail.com</a>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fab fa-github"></i>
+                                <a href="https://github.com/bhargavi1172001" target="_blank" rel="noopener noreferrer">bhargavi1172001</a>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/bhargavi-b-504904235" target="_blank" rel="noopener noreferrer">linkedin.com/in/bhargavi-b-504904235</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="https://formsubmit.co/el/penobe" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-        <div class="footer-content container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+        <div class="container">
+                            <div class="footer-content">
+                    <p>&copy; 2025 Bhargavi B. AI ML Engineer Portfolio.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- for icons -->
 </body>
-</html>
+</html> 
